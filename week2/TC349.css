@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 html { 
-    background-image: url(stone.jpg); 
-    background-color: #000000
+    background-color: #FFFFFF;
 } 
 
 body { 
@@ -11,10 +10,11 @@ body {
     border-style: solid; 
     border-width: 3px; 
     padding: 50px; 
-    background-color: #DCDCDC; 
+	background-image: url(backgroundMetal.jpg);
+    //background-color: #DCDCDC; 
     font-family:Verdana, Geneva, sans-serif; 
 	color: #2F4F4F;
-	float: left;
+	//float: left;
 	font-size: 14px;
 
 } 
