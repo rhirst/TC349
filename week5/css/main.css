@@ -175,6 +175,12 @@ textarea {
 		background: #f3f3f3;
 		
 		}
+		
+	a {
+		text-decoration: none;
+		color: #04B4AE;
+		
+		}
 
 
 
@@ -305,6 +311,13 @@ textarea {
 	article {
 		margin: 20px;
 		}
+	
+	#map-location {
+		background: #000;
+		background-position: center;
+		height: 250px;
+		transition: background-image 1s;
+	}
 }
 
 @media print,
