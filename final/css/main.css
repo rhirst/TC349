@@ -131,6 +131,7 @@ textarea {
 	}
 	
 	#stripes a { 
+		text-align: center;
 		display: block;
 		padding: 15px 150px 15px 0.5em;
 		width: 100%; 
@@ -223,6 +224,14 @@ textarea {
 		padding: 20px 32px 20px 32px;
 		margin-left: 10px;
 		margin-right: 10px;
+		}
+		
+	#home {
+		margin-left: 10%;
+		margin-bottom: 200px;
+		margin-top: 50px;
+		border: 5px solid #fff;
+		box-shadow: 0 0 10px #ccc;
 		}
 
 
