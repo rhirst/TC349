@@ -14,7 +14,7 @@
 
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 		<header><img id="banner" src='../img/WORLDCUP.jpg' height = "417" width = "1918">
@@ -24,16 +24,76 @@
 		<ul id="stripes">
 			<li><a href="../index.html">Home</a></li>
 			<li><a href="roster.html">Roster</a></li>
-			<li><a href="stats.html">Stats</a></li>
-			<li><a href="kits.html">Kits</a></li>
-			<li><a href="history.html">History</a></li>
+			<li><a href="fixtures.html">Fixtures</a></li>
+			<li><a href="kits.html">Jerseys</a></li>
 			</ul>
+			
+		<div id="group" data-0="background-image:url(../img/GroupStage.jpg);opacity:.5;" 
+			data-250="background-image:url(../img/groupsafter.jpg);opacity:1;" data-550="backgroun-image:url(opacity:.5;">
+			
+		</div>
+			
 
+		<div id="knockout">
+			<ul>
+				<li><a data-0="background-image:url(../img/brazil.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/chile.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+				<li><a data-0="background-image:url(../img/colombia.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/uruguay.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+				<li><a data-0="background-image:url(../img/france.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/nigeria.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+				<li><a data-0="background-image:url(../img/germany.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/algeria.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+				<li><a data-0="background-image:url(../img/netherlands.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/mexico.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+				<li><a data-0="background-image:url(../img/costarica.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/greece.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+				<li><a data-0="background-image:url(../img/argentina.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/switzerland.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+				<li><a data-0="background-image:url(../img/belgium.png);opacity:-1;" 
+			data-550="opacity:1;"></a>vs<a data-0="background-image:url(../img/usa.png);opacity:-1;" 
+			data-550="opacity:1;"></a></li>
+			</ul>
+		</div>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
+        <script src="../js/vendor/skrollr.min.js"></script>
+		<script src="../js/vendor/skrollr.menu.min.js"></script>
+		<script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
+		
+		<script type="text/javascript">
+		if ($(window).width() > 600) {
+			
+			var s = skrollr.init();
+			
+			skrollr.menu.init(s, {
+			//skrollr will smoothly animate to the new position using `animateTo`.
+			animate: true,
+
+			//The easing function to use.
+			easing: 'sqrt',
+
+			//How long the animation should take in ms.
+			duration: function(currentTop, targetTop) {
+				//By default, the duration is hardcoded at 500ms.
+				return 500;
+
+
+			},
+
+
+		});
+		}
+		</script>
 
     </body>
 </html>
